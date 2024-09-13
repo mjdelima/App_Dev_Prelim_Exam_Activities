@@ -1,4 +1,6 @@
 ### Included Activities:
 
-- Sum of Odd and Even Numbers from an Array
-- Checking of ArmStrong Number
+- Sum of Even and Odd Numbers in Array
+- Sum of all numbers in Array
+- Prime Number Checker
+- Armstrong Number Checker 
