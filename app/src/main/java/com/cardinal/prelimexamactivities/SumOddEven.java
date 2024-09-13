@@ -31,32 +31,39 @@ public class SumOddEven extends AppCompatActivity {
 
         binding.btnCalculate.setOnClickListener(v -> {
             String input = binding.etArrayInput.getText().toString().replace(" ", "");
-            String[] numbers = input.split(",");
-            int sumOdd = 0;
-            int sumEven = 0;
 
-            /*
-            for (String numStr : numbers) {
-                int num = Integer.parseInt(numStr);
-                if (num % 2 == 0) {
-                    sumEven += num;
-                } else {
-                    sumOdd += num;
+            String[] numbers;
+
+            try {
+                numbers = input.split(",");
+                int sumOdd = 0;
+                int sumEven = 0;
+
+                /*
+                for (String numStr : numbers) {
+                    int num = Integer.parseInt(numStr);
+                    if (num % 2 == 0) {
+                        sumEven += num;
+                    } else {
+                        sumOdd += num;
+                    }
                 }
-            }
-             */
+                 */
 
-            for(int i = 0; i < numbers.length; i++){
-                int num = Integer.parseInt(numbers[i]);
-                if(num % 2 == 0){
-                    sumEven += num;
-                }else{
-                    sumOdd += num;
+                for(int i = 0; i < numbers.length; i++){
+                    int num = Integer.parseInt(numbers[i]);
+                    if(num % 2 == 0){
+                        sumEven += num;
+                    }else{
+                        sumOdd += num;
+                    }
                 }
-            }
 
-            binding.tvResult.setText("Sum of all Odd numbers: " + sumOdd + "\n" +
-                    "Sum of all Even numbers: " + sumEven);
+                binding.tvResult.setText("Sum of all Odd numbers: " + sumOdd + "\n" +
+                        "Sum of all Even numbers: " + sumEven);
+            }catch (Exception e){
+                binding.tvResult.setText("Invalid Input");
+            }
         });
 
 

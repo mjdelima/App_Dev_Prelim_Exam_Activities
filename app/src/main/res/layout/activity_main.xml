@@ -21,6 +21,19 @@
         android:layout_height="wrap_content"
         android:text="Armstrong Number" />
 
+    <Button
+        android:id="@+id/btnPrime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prime Number Check" />
+
+
+    <Button
+        android:id="@+id/btnArraySum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sum of all Numbers in Array" />
+
 
 
 </LinearLayout>

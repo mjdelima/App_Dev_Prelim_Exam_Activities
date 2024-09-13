@@ -7,7 +7,7 @@ android {
     compileSdk = 34
 
 
-    viewBinding.enable = true;
+    viewBinding.enable = true
 
     defaultConfig {
         applicationId = "com.cardinal.prelimexamactivities"

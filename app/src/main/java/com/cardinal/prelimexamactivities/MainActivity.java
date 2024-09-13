@@ -36,7 +36,13 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(MainActivity.this, ArmstrongNumber.class));
         });
 
+        binding.btnPrime.setOnClickListener(v -> {
+            startActivity(new Intent(MainActivity.this, PrimeNumber.class));
+        });
 
+        binding.btnArraySum.setOnClickListener(v -> {
+            startActivity(new Intent(MainActivity.this, SumofArray.class));
+        });
+        }
 
     }
-}
