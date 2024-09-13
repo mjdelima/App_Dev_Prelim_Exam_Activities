@@ -19,20 +19,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/etArrayInput"
-        android:layout_width="0dp"
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="?attr/textInputFilledStyle"
+
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="20dp"
-        android:ems="10"
-        android:hint="Seprate number with Comma"
-        android:inputType="text"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:hint="Enter a array separated by comma"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etArrayInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btnCalculate"
@@ -42,16 +50,19 @@
         android:text="Submit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etArrayInput" />
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
 
     <TextView
         android:id="@+id/tvResult"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:textSize="20sp"
+        android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCalculate" />
+        app:layout_constraintTop_toBottomOf="@id/btnCalculate" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

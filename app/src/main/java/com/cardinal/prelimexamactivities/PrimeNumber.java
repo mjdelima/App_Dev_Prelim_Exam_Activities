@@ -43,9 +43,9 @@ public class PrimeNumber extends AppCompatActivity {
             }
 
             if(isPrime){
-                binding.tvResultPrime.setText("The Given Number is a Prime Number");
+                binding.tvResult.setText("The Given Number is a Prime Number");
             }else{
-                binding.tvResultPrime.setText("The Given Number is not a Prime Number");
+                binding.tvResult.setText("The Given Number is not a Prime Number");
             }
 
         });

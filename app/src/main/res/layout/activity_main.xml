@@ -15,20 +15,22 @@
         android:orientation="vertical"
         android:layout_height="wrap_content">
 
-
         <Button
             android:id="@+id/btnSumofOddEven"
+            style="@style/Widget.Material3.Button.ElevatedButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Sum of Odd and Even Numbers" />
 
         <Button
+            style="@style/Widget.Material3.Button.ElevatedButton"
             android:id="@+id/btnArmStrong"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Armstrong Number" />
 
         <Button
+            style="@style/Widget.Material3.Button.ElevatedButton"
             android:id="@+id/btnPrime"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -36,12 +38,14 @@
 
 
         <Button
+            style="@style/Widget.Material3.Button.ElevatedButton"
             android:id="@+id/btnVowelCounter"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Vowel Counter" />
 
         <Button
+            style="@style/Widget.Material3.Button.ElevatedButton"
             android:id="@+id/btnArraySum"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

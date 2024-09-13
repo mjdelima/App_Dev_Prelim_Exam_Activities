@@ -39,17 +39,6 @@ public class SumOddEven extends AppCompatActivity {
                 int sumOdd = 0;
                 int sumEven = 0;
 
-                /*
-                for (String numStr : numbers) {
-                    int num = Integer.parseInt(numStr);
-                    if (num % 2 == 0) {
-                        sumEven += num;
-                    } else {
-                        sumOdd += num;
-                    }
-                }
-                 */
-
                 for(int i = 0; i < numbers.length; i++){
                     int num = Integer.parseInt(numbers[i]);
                     if (num % 2 == 0) {
