@@ -13,6 +13,9 @@
         android:theme="@style/Theme.PrelimExamActivities"
         tools:targetApi="31">
         <activity
+            android:name=".VowelCounter"
+            android:exported="false" />
+        <activity
             android:name=".SumofArray"
             android:exported="false" />
         <activity

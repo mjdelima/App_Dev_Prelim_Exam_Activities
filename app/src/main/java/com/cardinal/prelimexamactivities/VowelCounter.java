@@ -2,7 +2,6 @@ package com.cardinal.prelimexamactivities;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,17 +9,17 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.cardinal.prelimexamactivities.databinding.ArmstrongNumberBinding;
+import com.cardinal.prelimexamactivities.databinding.VowelCounterBinding;
 
-public class ArmstrongNumber extends AppCompatActivity {
-    ArmstrongNumberBinding binding;
+public class VowelCounter extends AppCompatActivity {
+    VowelCounterBinding binding;
     @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
 
-        binding = ArmstrongNumberBinding.inflate(getLayoutInflater());
+        binding = VowelCounterBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -29,24 +28,18 @@ public class ArmstrongNumber extends AppCompatActivity {
             return insets;
         });
 
-        binding.btnCheck.setOnClickListener(v -> {
-            String input = binding.etArmstrongInput.getText().toString();
-
-            int sum = 0;
+        binding.btnSubmit.setOnClickListener(v -> {
+            String input = binding.etWordInput.getText().toString().toLowerCase();
+            int count = 0;
             for(int i = 0; i < input.length(); i++){
-                int num = Integer.parseInt(String.valueOf(input.charAt(i)));
-                sum += (int) Math.pow(num, input.length());
+                if(input.charAt(i) == 'a' || input.charAt(i) == 'e' ||
+                        input.charAt(i) == 'i'|| input.charAt(i) == 'o'||
+                        input.charAt(i) == 'u'){
+                    count++;
+                }
             }
 
-            Toast.makeText(this, "Calculated value: " + sum, Toast.LENGTH_SHORT).show();
-            if(sum == Integer.parseInt(input)){
-                binding.tvResult.setText("The Given Number is an Armstrong Number");
-            }else{
-                binding.tvResult.setText("The Given Number is not an Armstrong Number");
-            }
-    });
-
-
-
+            binding.tvResult.setText("The number of vowels in the given string is: " + count);
+        });
     }
 }

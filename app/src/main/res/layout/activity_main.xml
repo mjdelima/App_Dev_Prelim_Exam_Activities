@@ -9,31 +9,44 @@
     android:gravity="center"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btnSumofOddEven"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sum of Odd and Even Numbers" />
-
-    <Button
-        android:id="@+id/btnArmStrong"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Armstrong Number" />
-
-    <Button
-        android:id="@+id/btnPrime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Prime Number Check" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="25dp"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
 
 
-    <Button
-        android:id="@+id/btnArraySum"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sum of all Numbers in Array" />
+        <Button
+            android:id="@+id/btnSumofOddEven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sum of Odd and Even Numbers" />
+
+        <Button
+            android:id="@+id/btnArmStrong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Armstrong Number" />
+
+        <Button
+            android:id="@+id/btnPrime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prime Number Check" />
 
 
+        <Button
+            android:id="@+id/btnVowelCounter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vowel Counter" />
+
+        <Button
+            android:id="@+id/btnArraySum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sum of all Numbers in Array" />
+
+    </LinearLayout>
 
 </LinearLayout>

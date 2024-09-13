@@ -52,7 +52,7 @@ public class SumOddEven extends AppCompatActivity {
 
                 for(int i = 0; i < numbers.length; i++){
                     int num = Integer.parseInt(numbers[i]);
-                    if(num % 2 == 0){
+                    if (num % 2 == 0) {
                         sumEven += num;
                     }else{
                         sumOdd += num;

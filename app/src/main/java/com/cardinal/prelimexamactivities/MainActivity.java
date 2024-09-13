@@ -43,6 +43,12 @@ public class MainActivity extends AppCompatActivity {
         binding.btnArraySum.setOnClickListener(v -> {
             startActivity(new Intent(MainActivity.this, SumofArray.class));
         });
-        }
+
+        binding.btnVowelCounter.setOnClickListener(v -> {
+            startActivity(new Intent(MainActivity.this, VowelCounter.class));
+        });
+
 
     }
+
+}
