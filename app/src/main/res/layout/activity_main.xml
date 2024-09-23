@@ -9,48 +9,104 @@
     android:gravity="center"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+
+        android:alpha=".75"
+        android:contentDescription="ccs logo"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/ccs_logo" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="Prelim Exam Activities"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <ScrollView
+        android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:layout_margin="25dp"
-        android:orientation="vertical"
-        android:layout_height="wrap_content">
+        android:layout_margin="25dp">
 
-        <Button
-            android:id="@+id/btnSumofOddEven"
-            style="@style/Widget.Material3.Button.ElevatedButton"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sum of Odd and Even Numbers" />
-
-        <Button
-            style="@style/Widget.Material3.Button.ElevatedButton"
-            android:id="@+id/btnArmStrong"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Armstrong Number" />
-
-        <Button
-            style="@style/Widget.Material3.Button.ElevatedButton"
-            android:id="@+id/btnPrime"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Prime Number Check" />
+            android:orientation="vertical">
 
 
-        <Button
-            style="@style/Widget.Material3.Button.ElevatedButton"
-            android:id="@+id/btnVowelCounter"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Vowel Counter" />
+            <Button
+                android:id="@+id/btnVowelCounter"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Vowel Counter"
+                android:textSize="17sp" />
 
-        <Button
-            style="@style/Widget.Material3.Button.ElevatedButton"
-            android:id="@+id/btnArraySum"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Sum of all Numbers in Array" />
+            <Button
+                android:id="@+id/btnArmStrong"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Armstrong Number"
+                android:textSize="17sp" />
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/btnPrime"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Prime Number Check"
+                android:textSize="17sp" />
+
+
+            <Button
+                android:id="@+id/btnArraySum"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Sum of all Numbers in Array"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/btnSumofOddEven"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Sum of Odd and Even Numbers"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/btnDigitsSum"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Sum of Digits in a String"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/btnCharacterFrequency"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Character Frequency in a String"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
 
 </LinearLayout>

@@ -48,7 +48,14 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(MainActivity.this, VowelCounter.class));
         });
 
+        binding.btnDigitsSum.setOnClickListener(v -> {
+            startActivity(new Intent(MainActivity.this, DigitsSum.class));
+        });
+
+        binding.btnCharacterFrequency.setOnClickListener(v -> {
+            startActivity(new Intent(MainActivity.this, CharacterFrequency.class));
+        });
+        }
 
     }
 
-}
